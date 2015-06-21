@@ -1,0 +1,25 @@
+open 2 terminals, sudo su
+edit setup.sh to include network.c
+open default.rules and settings.config
+./setup.sh
+./setup2.sh
+ifconfig and edit settings.config
+./firewall ep1s eth0
+gcc -o firewall firewall.c network.c -lpcap -DDEBUGGING
+-ping with firewall off
+-ping with firewall on
+-ping debugging mode
+-ping icmp block
+-ping icmp block + unblock
+-google
+-google block rule port 80
+-google block rule port 80 and 81
+-google block unblock port 80
+-visit cs cornell
+-block cs cornell service any, port any
+-show pcap files transfer
+-generic hash tables
+-flow lookup
+-NAT ports, sequential
+-ARP reply
+-show code

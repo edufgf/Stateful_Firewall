@@ -1,0 +1,6 @@
+block out icmp HOME any -> 8.8.8.8 any
+allow out icmp HOME any -> 8.8.8.8 any
+block out tcp HOME any -> 74.125.20.99 80
+block out tcp HOME any -> 74.125.20.99 81
+allow out tcp HOME any -> 74.125.20.99 80
+block out any HOME any -> 128.84.154.137 any
